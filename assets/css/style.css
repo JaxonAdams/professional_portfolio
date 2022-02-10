@@ -354,6 +354,32 @@ main .icons {
     padding-bottom: 1rem;
 }
 
+#contact {
+    box-sizing: border-box;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.info-box {
+    padding: 1.5rem 2.5rem;
+    background-color: var(--secondary-color);
+    border-radius: 12px;
+    margin: 0 1rem 1.5rem 1rem;
+}
+
+.info-box:hover {
+    background-color: var(--tertiary-color);
+    color: var(--secondary-color);
+    padding: 0.5rem 3rem;
+    transition: all 0.5s ease-out;
+}
+
 /* media queries */
 @media screen and (min-width: 1171px) {
     .projects {
