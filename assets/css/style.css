@@ -238,11 +238,11 @@ main .icons {
     transform: translate3d(0, 0, 0);   
 }
 
-#about {
+#about, #work {
     padding: 0 4rem;
 }
 
-#about .lg-heading {
+#about .lg-heading, #work .lg-heading {
     margin-top: 2rem;
 }
 
@@ -295,6 +295,10 @@ main .icons {
 .other-skills {
     grid-column: 3;
     grid-row: 2;
+}
+
+#scroll {
+    overflow: visible;
 }
 
 /* media queries */
