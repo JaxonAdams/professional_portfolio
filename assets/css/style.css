@@ -238,11 +238,11 @@ main .icons {
     transform: translate3d(0, 0, 0);   
 }
 
-#about, #work {
+#about, #work, #contact {
     padding: 0 4rem;
 }
 
-#about .lg-heading, #work .lg-heading {
+#about .lg-heading, #work .lg-heading, #contact .lg-heading {
     margin-top: 2rem;
 }
 
