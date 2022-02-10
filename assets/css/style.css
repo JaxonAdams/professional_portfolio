@@ -221,7 +221,7 @@ main .icons {
     transform: translate3d(0, 100%, 0);
 }
 
-.portrait {
+.portrait, .bio-portrait {
     width: 250px;
     height: 250px;
     background: url(../images/jaxon-2.jpg);
@@ -237,6 +237,65 @@ main .icons {
     transform: translate3d(0, 0, 0);   
 }
 
+#about {
+    overflow: hidden;
+}
+
+#about .lg-heading {
+    margin-top: 2rem;
+}
+
+.skill-header {
+    font-size: 2rem;
+    margin-left: 2.5rem;
+}
+
+.skill-list {
+    line-height: 2.5;
+}
+
+.bio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    grid-auto-rows: minmax(100px, auto);
+    box-sizing: border-box;
+}
+
+.bio-portrait {
+    grid-column: 1;
+    grid-row: 1;
+    margin-bottom: 2rem;
+}
+
+.my-bio {
+    grid-column: 2 / 4;
+    grid-row: 1;
+    font-size: 1.5rem;
+    margin-top: 3.5rem;
+}
+
+.front-end, .back-end, .other-skills {
+    line-height: 1.7;
+    font-size: 18px;
+    border-bottom: var(--tertiary-color) 5px solid;
+}
+
+.front-end {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.back-end {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.other-skills {
+    grid-column: 3;
+    grid-row: 2;
+}
+
 /* media queries */
 @media screen and (min-width: 1171px) {
 
@@ -247,9 +306,6 @@ main .icons {
 }
 
 @media screen and (max-width: 768px) {
-    body {
-        background-color: var(--secondary-color);
-    }
 
     main {
         align-items: center;
