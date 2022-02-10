@@ -16,6 +16,7 @@ body {
     margin: 0;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5;
+    overflow: hidden;
 }
 
 .overlay {
@@ -238,7 +239,7 @@ main .icons {
 }
 
 #about {
-    overflow: hidden;
+    padding: 0 4rem;
 }
 
 #about .lg-heading {
@@ -341,6 +342,47 @@ main .icons {
     .portrait {
         width: 150px;
         height: 150px;
+    }
+
+    #scroll {
+        overflow: visible;
+    }
+
+    .skill-item {
+        line-height: 1.5;
+        margin: 0.5rem 0;
+    }
+
+    .bio-portrait {
+        grid-column: 2;
+        grid-row: 1;
+        margin-bottom: 2rem;
+    }
+    
+    .my-bio {
+        grid-column: 1 / 4;
+        grid-row: 2;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+    
+    .front-end {
+        grid-column: 1 / 4;
+        grid-row: 3;
+    }
+    
+    .back-end {
+        grid-column: 1 / 4;
+        grid-row: 4;
+    }
+    
+    .other-skills {
+        grid-column: 1 / 4;
+        grid-row: 5;
+    }
+
+    .front-end, .back-end, .other-skills {
+        margin-bottom: 1.5rem;
     }
 }
 
