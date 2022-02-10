@@ -301,13 +301,70 @@ main .icons {
     overflow: visible;
 }
 
+.project-img {
+    width: 250px;
+    height: 250px;
+    border: var(--secondary-color) 3px solid;
+}
+
+.project-link, .github-link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 0.2rem;
+}
+
+.project-link {
+    background-color: var(--quaternary-color);
+    color: var(--secondary-color);
+}
+
+.github-link {
+    background-color: var(--secondary-color);
+}
+
+.project-link:hover, .github-link:hover {
+    background-color: var(--tertiary-color);
+    transition: all 0.5s ease-out;
+}
+
+.github-link:hover {
+    color: var(--secondary-color);
+    transition: all 0.5s ease-out;
+}
+
+.project-img:hover {
+    opacity: 0.5;
+    transition: all 0.5s ease-out;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    grid-auto-rows: minmax(100px, auto);
+    box-sizing: border-box;
+}
+
+.project {
+    display: flex;
+    flex-flow: column wrap;
+    width: 250px;
+    padding-bottom: 1rem;
+}
+
 /* media queries */
 @media screen and (min-width: 1171px) {
-
+    .projects {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
-
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -392,6 +449,10 @@ main .icons {
     .front-end, .back-end, .other-skills {
         margin-bottom: 1.5rem;
     }
+
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -401,5 +462,10 @@ main .icons {
 
     main#home h1 {
         margin-top: 10vh;
+    }
+
+    .projects {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 4rem;
     }
 }
