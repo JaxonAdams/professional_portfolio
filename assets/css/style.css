@@ -302,8 +302,8 @@ main .icons {
 }
 
 .project-img {
-    width: 250px;
-    height: 250px;
+    width: 270px;
+    height: 270px;
     border: var(--secondary-color) 3px solid;
 }
 
@@ -350,7 +350,7 @@ main .icons {
 .project {
     display: flex;
     flex-flow: column wrap;
-    width: 250px;
+    width: 270px;
     padding-bottom: 1rem;
 }
 
@@ -478,6 +478,7 @@ main .icons {
 
     .projects {
         grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
     }
 }
 
