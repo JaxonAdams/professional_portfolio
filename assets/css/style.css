@@ -267,6 +267,8 @@ main .icons {
     grid-column: 1;
     grid-row: 1;
     margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
 }
 
 .my-bio {
